@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Torre Médica La Carolina | Machala",
+    "description": "Medical specialists directory in Machala, Ecuador. Book via WhatsApp."
+  },
+  "nav": {
+    "brand": "Torre Medica La Carolina",
+    "specialties": "Specialties",
+    "specialists": "Specialists",
+    "towers": "Buildings",
+    "doctors": "Doctors",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "Machala · Ecuador",
+    "title": "Medical specialists, all in one place",
+    "description": "Book your appointment directly via WhatsApp — no middlemen, no waiting. Torre Médica La Carolina brings together the best specialists in Machala.",
+    "primaryCta": "View specialists",
+    "secondaryCta": "How to book",
+    "statDoctors": "12 demo doctors",
+    "statSpecialties": "12 specialties",
+    "statLocale": "ES / EN / 中文"
+  },
+  "howto": {
+    "title": "Booking is this simple",
+    "step1Title": "Choose your specialist",
+    "step1Desc": "Browse the directory and find the professional you need.",
+    "step2Title": "Message on WhatsApp",
+    "step2Desc": "Contact the office directly with a single tap.",
+    "step3Title": "Confirm your appointment",
+    "step3Desc": "The doctor's team confirms your available date and time."
+  },
+  "specialties": {
+    "title": "Featured specialties",
+    "description": "A quick look at the medical areas available in the tower."
+  },
+  "doctors": {
+    "title": "Doctor directory",
+    "description": "Every card includes a direct WhatsApp call to action for booking or first contact.",
+    "languages": "Languages",
+    "schedule": "Hours",
+    "location": "Location",
+    "whatsapp": "Book on WhatsApp"
+  },
+  "specialists": {
+    "title": "Our specialists",
+    "subtitle": "Complete directory"
+  },
+  "towers": {
+    "title": "Our Buildings",
+    "subtitle": "Two locations in Machala"
+  },
+  "footer": {
+    "address": "La Carolina Avenue, Machala, Ecuador",
+    "phone": "Information desk: +593 7 555 0101"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "拉卡罗莱纳医疗大楼 | 马查拉",
+    "description": "厄瓜多尔马查拉专科医生目录。通过WhatsApp预约。"
+  },
+  "nav": {
+    "brand": "Torre Medica La Carolina",
+    "specialties": "专科",
+    "specialists": "专科医生",
+    "towers": "医疗大楼",
+    "doctors": "医生",
+    "language": "语言"
+  },
+  "hero": {
+    "eyebrow": "厄瓜多尔·马查拉",
+    "title": "所有医疗专科，一站式服务",
+    "description": "直接通过WhatsApp预约，无需中间人，无需等待。拉卡罗莱纳医疗大楼汇聚马查拉最优秀的专科医生。",
+    "primaryCta": "查看专科医生",
+    "secondaryCta": "如何预约",
+    "statDoctors": "12 位演示医生",
+    "statSpecialties": "12 个专科",
+    "statLocale": "ES / EN / 中文"
+  },
+  "howto": {
+    "title": "预约就是这么简单",
+    "step1Title": "选择专科医生",
+    "step1Desc": "浏览目录，找到您需要的专业医生。",
+    "step2Title": "通过WhatsApp联系",
+    "step2Desc": "一键直接联系诊所。",
+    "step3Title": "确认预约",
+    "step3Desc": "医生团队将确认您的可用日期和时间。"
+  },
+  "specialties": {
+    "title": "重点专科",
+    "description": "快速了解医疗大楼内可预约的主要专科。"
+  },
+  "doctors": {
+    "title": "医生目录",
+    "description": "每张医生卡片都带有 WhatsApp 按钮，方便预约和初步咨询。",
+    "languages": "语言",
+    "schedule": "出诊时间",
+    "location": "位置",
+    "whatsapp": "通过 WhatsApp 预约"
+  },
+  "specialists": {
+    "title": "我们的专科医生",
+    "subtitle": "完整目录"
+  },
+  "towers": {
+    "title": "医疗大楼",
+    "subtitle": "马查拉两处地点"
+  },
+  "footer": {
+    "address": "厄瓜多尔马查拉 La Carolina 大道",
+    "phone": "咨询总机：+593 7 555 0101"
+  }
+}

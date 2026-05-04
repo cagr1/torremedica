@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "title": "Torre Médica La Carolina | Machala",
+    "description": "Directorio de especialistas médicos en Machala, Ecuador. Agenda por WhatsApp."
+  },
+  "nav": {
+    "brand": "Torre Medica La Carolina",
+    "specialties": "Especialidades",
+    "specialists": "Especialistas",
+    "towers": "Torres",
+    "doctors": "Doctores",
+    "language": "Idioma"
+  },
+  "hero": {
+    "eyebrow": "Machala · Ecuador",
+    "title": "Especialistas médicos en un solo lugar",
+    "description": "Agenda tu cita directamente por WhatsApp, sin intermediarios ni esperas. Torre Médica La Carolina reúne a los mejores especialistas de Machala.",
+    "primaryCta": "Ver especialistas",
+    "secondaryCta": "Cómo agendar",
+    "statDoctors": "12 doctores demo",
+    "statSpecialties": "12 especialidades",
+    "statLocale": "ES / EN / 中文"
+  },
+  "howto": {
+    "title": "Así de fácil es agendar",
+    "step1Title": "Elige tu especialista",
+    "step1Desc": "Navega el directorio y encuentra al profesional que necesitas.",
+    "step2Title": "Escríbenos por WhatsApp",
+    "step2Desc": "Contacta directamente al consultorio con un solo clic.",
+    "step3Title": "Confirma tu cita",
+    "step3Desc": "El equipo del doctor te confirma fecha y hora disponible."
+  },
+  "specialties": {
+    "title": "Especialidades destacadas",
+    "description": "Una vista rapida de las areas medicas disponibles en la torre."
+  },
+  "doctors": {
+    "title": "Directorio de doctores",
+    "description": "Cada tarjeta incluye una llamada rapida por WhatsApp para agendamiento o consultas iniciales.",
+    "languages": "Idiomas",
+    "schedule": "Horario",
+    "location": "Ubicacion",
+    "whatsapp": "Agendar por WhatsApp"
+  },
+  "specialists": {
+    "title": "Nuestros especialistas",
+    "subtitle": "Directorio completo"
+  },
+  "towers": {
+    "title": "Nuestras torres",
+    "subtitle": "Dos ubicaciones en Machala"
+  },
+  "footer": {
+    "address": "Av. La Carolina, Machala, Ecuador",
+    "phone": "Central de informacion: +593 7 555 0101"
+  }
+}

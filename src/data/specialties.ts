@@ -1,0 +1,14 @@
+export const specialties = [
+  { slug: "cardiologia", name: "Cardiologia" },
+  { slug: "pediatria", name: "Pediatria" },
+  { slug: "dermatologia", name: "Dermatologia" },
+  { slug: "traumatologia", name: "Traumatologia" },
+  { slug: "ginecologia", name: "Ginecologia" },
+  { slug: "neurologia", name: "Neurologia" },
+  { slug: "nutricion", name: "Nutricion" },
+  { slug: "oftalmologia", name: "Oftalmologia" },
+  { slug: "odontologia", name: "Odontologia" },
+  { slug: "psicologia-clinica", name: "Psicologia Clinica" },
+  { slug: "medicina-interna", name: "Medicina Interna" },
+  { slug: "urologia", name: "Urologia" },
+] as const;
