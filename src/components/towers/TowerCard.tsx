@@ -1,44 +1,76 @@
-import { Clock, MapPin, Phone } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { Clock, ExternalLink, MapPin, Phone } from "lucide-react";
 
 import { towers } from "@/data/towers";
 
 type TowerCardProps = {
   tower: (typeof towers)[number];
   doctorCount: number;
+  cardTag: string;
+  specialistsLabel: string;
+  floorsLabel: string;
+  scheduleLabel: string;
+  locationNote: string;
+  viewOnMapsLabel: string;
 };
 
-export function TowerCard({ tower, doctorCount }: TowerCardProps) {
-  const t = useTranslations("nav");
-
+export function TowerCard({
+  tower,
+  doctorCount,
+  cardTag,
+  specialistsLabel,
+  floorsLabel,
+  scheduleLabel,
+  locationNote,
+  viewOnMapsLabel,
+}: TowerCardProps) {
   return (
-    <article className="rounded-[1.75rem] border border-slate-200/80 bg-white p-6 shadow-[0_14px_45px_rgba(15,23,42,0.06)]">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <h2 className="text-2xl font-semibold text-slate-900 sm:text-3xl">
-            {tower.name}
-          </h2>
-          <p className="mt-4 flex items-start gap-2 text-sm leading-6 text-slate-600">
-            <MapPin className="mt-1 h-4 w-4 shrink-0 text-primary" />
-            <span>{tower.address}</span>
-          </p>
+    <article className="overflow-hidden rounded-[20px] border border-gray-100 bg-white">
+      <div className="border-b border-gold/20 bg-gold-pale px-6 py-5">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <span className="mb-2 block font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-gold">
+              {cardTag}
+            </span>
+            <h2 className="font-display text-3xl font-bold text-navy">{tower.name}</h2>
+          </div>
+          <span className="rounded-full border border-gold/40 px-3 py-1 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-navy">
+            {doctorCount} {specialistsLabel}
+          </span>
         </div>
-
-        <span className="rounded-full bg-blue-100 px-3 py-1 text-sm font-semibold text-primary">
-          {doctorCount} {t("specialists").toLowerCase()}
-        </span>
       </div>
 
-      <div className="mt-6 space-y-4 text-sm text-slate-600">
-        <p className="font-medium text-slate-800">{tower.floors}</p>
-        <div className="flex items-start gap-2">
-          <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-          <span>{tower.schedule}</span>
+      <div className="space-y-6 p-6">
+        <p className="font-display text-xl font-semibold text-navy">{floorsLabel}</p>
+
+        <div className="space-y-3 pt-2">
+          <div className="flex items-start gap-3 font-sans text-sm text-on-surface-variant">
+            <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+            <div className="space-y-1">
+              <span className="block">{tower.address}</span>
+              <span className="block text-xs">{locationNote}</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 font-sans text-sm text-on-surface-variant">
+            <Clock className="h-4 w-4 shrink-0 text-gold" />
+            <span>{scheduleLabel}</span>
+          </div>
+          <div className="flex items-center gap-3 font-sans text-sm text-on-surface-variant">
+            <Phone className="h-4 w-4 shrink-0 text-gold" />
+            <a href={`tel:${tower.phone}`} className="transition-colors hover:text-navy">
+              {tower.phone}
+            </a>
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <Phone className="h-4 w-4 text-primary" />
-          <span>{tower.phone}</span>
-        </div>
+
+        <a
+          href={tower.mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-xl border border-navy px-4 py-3 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-navy transition-all hover:bg-navy hover:text-white"
+        >
+          {viewOnMapsLabel}
+          <ExternalLink className="h-4 w-4" />
+        </a>
       </div>
     </article>
   );

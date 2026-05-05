@@ -1,38 +1,95 @@
 {
   "metadata": {
-    "title": "Torre Médica La Carolina | Machala",
-    "description": "Directorio de especialistas médicos en Machala, Ecuador. Agenda por WhatsApp."
+    "title": "Torre Medica La Carolina | Machala",
+    "description": "Directorio de especialistas medicos en Machala, Ecuador. Agenda por WhatsApp."
   },
   "nav": {
     "brand": "Torre Medica La Carolina",
+    "home": "Inicio",
     "specialties": "Especialidades",
     "specialists": "Especialistas",
     "towers": "Torres",
     "doctors": "Doctores",
-    "language": "Idioma"
+    "language": "Idioma",
+    "bookAppointment": "Pedir Cita",
+    "announcementAddress": "Circunvalacion Norte y Marcel Laniado, Machala",
+    "announcementHours": "Acceso del complejo 24 horas"
   },
   "hero": {
     "eyebrow": "Machala · Ecuador",
-    "title": "Especialistas médicos en un solo lugar",
-    "description": "Agenda tu cita directamente por WhatsApp, sin intermediarios ni esperas. Torre Médica La Carolina reúne a los mejores especialistas de Machala.",
+    "title": "Especialistas medicos en un solo lugar",
+    "description": "Agenda tu cita directamente por WhatsApp, sin intermediarios ni esperas. Torre Medica La Carolina reune a los mejores especialistas de Machala.",
     "primaryCta": "Ver especialistas",
-    "secondaryCta": "Cómo agendar",
-    "statDoctors": "12 doctores demo",
-    "statSpecialties": "12 especialidades",
-    "statLocale": "ES / EN / 中文"
+    "secondaryCta": "Como agendar"
   },
   "howto": {
-    "title": "Así de fácil es agendar",
+    "title": "Asi de facil es agendar",
     "step1Title": "Elige tu especialista",
     "step1Desc": "Navega el directorio y encuentra al profesional que necesitas.",
-    "step2Title": "Escríbenos por WhatsApp",
+    "step2Title": "Escribenos por WhatsApp",
     "step2Desc": "Contacta directamente al consultorio con un solo clic.",
     "step3Title": "Confirma tu cita",
     "step3Desc": "El equipo del doctor te confirma fecha y hora disponible."
   },
+  "home": {
+    "howtoTag": "Tu camino a la salud",
+    "howtoSubtitle": "Tres simples pasos para conectar con el especialista ideal.",
+    "doctorsTag": "Nuestros profesionales",
+    "viewAllSpecialists": "Ver todos los especialistas",
+    "facilitiesTag": "Nuestra infraestructura",
+    "facilitiesTitle": "Disenado para la",
+    "facilitiesAccent": "excelencia",
+    "facilitiesDescription": "Dos torres completas de infraestructura medica de vanguardia en el centro de Machala.",
+    "feature1Title": "Torre I: Centro clinico",
+    "feature1Desc": "Consultorios privados y laboratorios de diagnostico avanzado distribuidos en varios pisos.",
+    "feature2Title": "Torre II: Unidades medicas",
+    "feature2Desc": "Espacios para procedimientos, apoyo diagnostico y atencion especializada con enfoque integral.",
+    "feature3Title": "Horario extendido",
+    "feature3Desc": "Atencion coordinada, seguridad permanente y acceso continuo al complejo.",
+    "exploreTowers": "Explorar torres",
+    "facilitiesImageAlt": "Instalaciones medicas",
+    "ctaEyebrow": "Comienza hoy",
+    "ctaTitle": "Listo para encontrar tu especialista?",
+    "ctaDescription": "Mas de 50 especialistas calificados en dos torres de ultima generacion, listos para atenderte.",
+    "ctaPrimary": "Ver todos los especialistas",
+    "ctaSecondary": "WhatsApp Concierge",
+    "stats": {
+      "specialists": {
+        "label": "Especialistas",
+        "sub": "En distintas areas"
+      },
+      "towers": {
+        "label": "Torres medicas",
+        "sub": "Infraestructura moderna"
+      },
+      "years": {
+        "label": "Anos de servicio",
+        "sub": "Atencion en Machala"
+      },
+      "security": {
+        "label": "Seguridad",
+        "sub": "Siempre disponible"
+      }
+    }
+  },
   "specialties": {
     "title": "Especialidades destacadas",
     "description": "Una vista rapida de las areas medicas disponibles en la torre."
+  },
+  "specialtyNames": {
+    "all": "Todos",
+    "cardiologia": "Cardiologia",
+    "pediatria": "Pediatria",
+    "dermatologia": "Dermatologia",
+    "traumatologia": "Traumatologia",
+    "ginecologia": "Ginecologia",
+    "neurologia": "Neurologia",
+    "nutricion": "Nutricion",
+    "oftalmologia": "Oftalmologia",
+    "odontologia": "Odontologia",
+    "psicologia-clinica": "Psicologia clinica",
+    "medicina-interna": "Medicina interna",
+    "urologia": "Urologia"
   },
   "doctors": {
     "title": "Directorio de doctores",
@@ -40,18 +97,80 @@
     "languages": "Idiomas",
     "schedule": "Horario",
     "location": "Ubicacion",
-    "whatsapp": "Agendar por WhatsApp"
+    "whatsapp": "Agendar por WhatsApp",
+    "available": "Disponible",
+    "emptyState": "No hay especialistas en esta categoria."
   },
   "specialists": {
     "title": "Nuestros especialistas",
-    "subtitle": "Directorio completo"
+    "subtitle": "Directorio completo",
+    "directoryTag": "Directorio medico"
   },
   "towers": {
     "title": "Nuestras torres",
-    "subtitle": "Dos ubicaciones en Machala"
+    "subtitle": "Dos torres en un mismo complejo medico",
+    "cardTag": "Infraestructura medica",
+    "viewOnMaps": "Ver en Google Maps",
+    "mapTitle": "Ubicacion del complejo",
+    "mapDescription": "Google Maps muestra Torre Medica La Carolina como una sola sede publica. Desde ahi se accede a la Torre I y la Torre II.",
+    "openMaps": "Abrir Google Maps",
+    "reviewsEyebrow": "Resenas publicas",
+    "reviewsTitle": "Lo que dicen los pacientes",
+    "reviewsDescription": "Resenas visibles en la ficha publica de Google Maps del complejo Torre Medica La Carolina.",
+    "viewReviews": "Ver resenas en Google",
+    "reviewQuotes": {
+      "review-1": "Excelentes profesionales.",
+      "review-2": "Excelente servicio.",
+      "review-3": "Buenos especialistas se encuentra."
+    },
+    "torre-1": {
+      "floors": "Pisos 1 al 6",
+      "schedule": "Complejo medico con acceso 24 horas",
+      "locationNote": "Aparece junto a la Torre II en una sola ficha de Google Maps."
+    },
+    "torre-2": {
+      "floors": "Pisos 1 al 5",
+      "schedule": "Complejo medico con acceso 24 horas",
+      "locationNote": "Comparte la misma ubicacion publica del complejo en Google Maps."
+    }
   },
   "footer": {
-    "address": "Av. La Carolina, Machala, Ecuador",
-    "phone": "Central de informacion: +593 7 555 0101"
+    "description": "Centro medico de excelencia en el corazon de Machala, Ecuador.",
+    "contactTitle": "Contacto",
+    "navigationTitle": "Navegacion",
+    "specialtiesTitle": "Especialidades",
+    "hoursLabel": "Horario",
+    "address": "Circunvalacion Norte y Marcel Laniado, Machala, Ecuador",
+    "phone": "Central de informacion: +593 7 298 1574",
+    "weekHours": "Lun-Vie: 07:00-20:00",
+    "saturdayHours": "Sab: 08:00-14:00",
+    "whatsapp": "WhatsApp: +593 7 298 1574",
+    "copyright": "© 2026 Torre Medica La Carolina. Todos los derechos reservados.",
+    "tagline": "Excelencia medica en Ecuador"
+  },
+  "profile": {
+    "backToSpecialists": "Volver a especialistas",
+    "certifiedSpecialist": "Especialista certificado",
+    "experience": "Experiencia profesional",
+    "contact": "Contacto rapido",
+    "contactDesc": "Agenda tu cita directamente con el consultorio.",
+    "bookWhatsApp": "Agendar por WhatsApp",
+    "officeLocation": "Ubicacion del consultorio",
+    "visitingHours": "Horario de atencion",
+    "openMaps": "Abrir en Google Maps",
+    "viewProfile": "Ver perfil"
+  },
+  "search": {
+    "nameLabel": "Buscar por nombre",
+    "namePlaceholder": "Ej. Dr. Romero...",
+    "specialtyLabel": "Especialidad",
+    "allSpecialties": "Todas las especialidades",
+    "resetLabel": "Restablecer",
+    "noResultsTitle": "Sin resultados",
+    "noResultsDesc": "Intenta ajustar tu busqueda o los filtros.",
+    "notFoundTitle": "No encontraste lo que buscas?",
+    "notFoundDesc": "Nuestro centro cuenta con mas de 50 especialistas. Contactanos y te ayudamos a encontrar el profesional ideal.",
+    "callReception": "Llamar a recepcion",
+    "whatsappCentral": "WhatsApp Central"
   }
 }

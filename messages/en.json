@@ -1,25 +1,26 @@
 {
   "metadata": {
-    "title": "Torre Médica La Carolina | Machala",
+    "title": "Torre Medica La Carolina | Machala",
     "description": "Medical specialists directory in Machala, Ecuador. Book via WhatsApp."
   },
   "nav": {
     "brand": "Torre Medica La Carolina",
+    "home": "Home",
     "specialties": "Specialties",
     "specialists": "Specialists",
     "towers": "Buildings",
     "doctors": "Doctors",
-    "language": "Language"
+    "language": "Language",
+    "bookAppointment": "Book Appointment",
+    "announcementAddress": "Circunvalacion Norte and Marcel Laniado, Machala",
+    "announcementHours": "24-hour complex access"
   },
   "hero": {
     "eyebrow": "Machala · Ecuador",
     "title": "Medical specialists, all in one place",
-    "description": "Book your appointment directly via WhatsApp — no middlemen, no waiting. Torre Médica La Carolina brings together the best specialists in Machala.",
+    "description": "Book your appointment directly via WhatsApp, with no middlemen and no waiting. Torre Medica La Carolina brings together leading specialists in Machala.",
     "primaryCta": "View specialists",
-    "secondaryCta": "How to book",
-    "statDoctors": "12 demo doctors",
-    "statSpecialties": "12 specialties",
-    "statLocale": "ES / EN / 中文"
+    "secondaryCta": "How to book"
   },
   "howto": {
     "title": "Booking is this simple",
@@ -30,28 +31,146 @@
     "step3Title": "Confirm your appointment",
     "step3Desc": "The doctor's team confirms your available date and time."
   },
+  "home": {
+    "howtoTag": "Your path to care",
+    "howtoSubtitle": "Three simple steps to connect with the right specialist.",
+    "doctorsTag": "Our professionals",
+    "viewAllSpecialists": "View all specialists",
+    "facilitiesTag": "Our facilities",
+    "facilitiesTitle": "Designed for",
+    "facilitiesAccent": "excellence",
+    "facilitiesDescription": "Two full medical towers with contemporary infrastructure in the heart of Machala.",
+    "feature1Title": "Tower I: Clinical center",
+    "feature1Desc": "Private offices and advanced diagnostic laboratories distributed across multiple floors.",
+    "feature2Title": "Tower II: Medical units",
+    "feature2Desc": "Spaces for procedures, diagnostic support, and specialized care with an integrated approach.",
+    "feature3Title": "Extended hours",
+    "feature3Desc": "Coordinated care, continuous security, and round-the-clock access to the complex.",
+    "exploreTowers": "Explore towers",
+    "facilitiesImageAlt": "Medical facilities",
+    "ctaEyebrow": "Start today",
+    "ctaTitle": "Ready to find your specialist?",
+    "ctaDescription": "More than 50 qualified specialists across two next-generation towers, ready to care for you.",
+    "ctaPrimary": "View all specialists",
+    "ctaSecondary": "WhatsApp Concierge",
+    "stats": {
+      "specialists": {
+        "label": "Specialists",
+        "sub": "Across many fields"
+      },
+      "towers": {
+        "label": "Medical towers",
+        "sub": "Modern infrastructure"
+      },
+      "years": {
+        "label": "Years of service",
+        "sub": "Serving Machala"
+      },
+      "security": {
+        "label": "Security",
+        "sub": "Always available"
+      }
+    }
+  },
   "specialties": {
     "title": "Featured specialties",
     "description": "A quick look at the medical areas available in the tower."
   },
+  "specialtyNames": {
+    "all": "All",
+    "cardiologia": "Cardiology",
+    "pediatria": "Pediatrics",
+    "dermatologia": "Dermatology",
+    "traumatologia": "Traumatology",
+    "ginecologia": "Gynecology",
+    "neurologia": "Neurology",
+    "nutricion": "Nutrition",
+    "oftalmologia": "Ophthalmology",
+    "odontologia": "Dentistry",
+    "psicologia-clinica": "Clinical psychology",
+    "medicina-interna": "Internal medicine",
+    "urologia": "Urology"
+  },
   "doctors": {
     "title": "Doctor directory",
-    "description": "Every card includes a direct WhatsApp call to action for booking or first contact.",
+    "description": "Each card includes a direct WhatsApp action for booking or initial contact.",
     "languages": "Languages",
     "schedule": "Hours",
     "location": "Location",
-    "whatsapp": "Book on WhatsApp"
+    "whatsapp": "Book on WhatsApp",
+    "available": "Available",
+    "emptyState": "There are no specialists in this category."
   },
   "specialists": {
     "title": "Our specialists",
-    "subtitle": "Complete directory"
+    "subtitle": "Complete directory",
+    "directoryTag": "Medical directory"
   },
   "towers": {
-    "title": "Our Buildings",
-    "subtitle": "Two locations in Machala"
+    "title": "Our buildings",
+    "subtitle": "Two towers inside one medical complex",
+    "cardTag": "Medical infrastructure",
+    "viewOnMaps": "View on Google Maps",
+    "mapTitle": "Complex location",
+    "mapDescription": "Google Maps lists Torre Medica La Carolina as a single public place. From that listing, visitors access Tower I and Tower II.",
+    "openMaps": "Open Google Maps",
+    "reviewsEyebrow": "Public reviews",
+    "reviewsTitle": "What patients are saying",
+    "reviewsDescription": "Review highlights shown on the public Google Maps listing for Torre Medica La Carolina.",
+    "viewReviews": "View reviews on Google",
+    "reviewQuotes": {
+      "review-1": "Excellent professionals.",
+      "review-2": "Excellent service.",
+      "review-3": "You can find good specialists here."
+    },
+    "torre-1": {
+      "floors": "Floors 1 through 6",
+      "schedule": "Medical complex with 24-hour access",
+      "locationNote": "It appears together with Tower II under a single Google Maps listing."
+    },
+    "torre-2": {
+      "floors": "Floors 1 through 5",
+      "schedule": "Medical complex with 24-hour access",
+      "locationNote": "It shares the same public complex listing on Google Maps."
+    }
   },
   "footer": {
-    "address": "La Carolina Avenue, Machala, Ecuador",
-    "phone": "Information desk: +593 7 555 0101"
+    "description": "A center of medical excellence in the heart of Machala, Ecuador.",
+    "contactTitle": "Contact",
+    "navigationTitle": "Navigation",
+    "specialtiesTitle": "Specialties",
+    "hoursLabel": "Hours",
+    "address": "Circunvalacion Norte and Marcel Laniado, Machala, Ecuador",
+    "phone": "Information desk: +593 7 298 1574",
+    "weekHours": "Mon-Fri: 07:00-20:00",
+    "saturdayHours": "Sat: 08:00-14:00",
+    "whatsapp": "WhatsApp: +593 7 298 1574",
+    "copyright": "© 2026 Torre Medica La Carolina. All rights reserved.",
+    "tagline": "Medical excellence in Ecuador"
+  },
+  "profile": {
+    "backToSpecialists": "Back to specialists",
+    "certifiedSpecialist": "Certified specialist",
+    "experience": "Professional experience",
+    "contact": "Quick contact",
+    "contactDesc": "Schedule your visit directly with the doctor's office.",
+    "bookWhatsApp": "Book on WhatsApp",
+    "officeLocation": "Office location",
+    "visitingHours": "Visiting hours",
+    "openMaps": "Open in Google Maps",
+    "viewProfile": "View profile"
+  },
+  "search": {
+    "nameLabel": "Search by name",
+    "namePlaceholder": "e.g. Dr. Romero...",
+    "specialtyLabel": "Specialty",
+    "allSpecialties": "All specialties",
+    "resetLabel": "Reset",
+    "noResultsTitle": "No results found",
+    "noResultsDesc": "Try adjusting your search terms or filters.",
+    "notFoundTitle": "Didn't find who you're looking for?",
+    "notFoundDesc": "Our center has over 50 specialists. Contact us and we'll help you find the right provider.",
+    "callReception": "Call reception",
+    "whatsappCentral": "WhatsApp Central"
   }
 }

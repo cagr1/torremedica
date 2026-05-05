@@ -3,14 +3,13 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 
 import "../globals.css";
+import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { routing } from "@/i18n/routing";
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
-  params: {
-    locale: string;
-  };
+  params: { locale: string };
 };
 
 export async function generateMetadata({
@@ -39,17 +38,15 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body className="min-h-screen text-slate-900">
+      <body className="min-h-screen bg-cream text-on-surface">
         <NextIntlClientProvider messages={messages}>
-          <div className="mx-auto flex w-full max-w-7xl flex-col px-4 pb-12 pt-5 sm:px-6 lg:px-8">
-            <Navbar locale={locale} />
-            {children}
-          </div>
+          <Navbar locale={locale} />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

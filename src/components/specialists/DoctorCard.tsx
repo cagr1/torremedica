@@ -1,7 +1,7 @@
-import { Globe, MapPin, Phone } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
+import { Link } from "@/i18n/navigation";
 import type { Doctor } from "@/types";
 
 type DoctorCardProps = {
@@ -11,51 +11,62 @@ type DoctorCardProps = {
 
 export function DoctorCard({ doctor, locale }: DoctorCardProps) {
   const t = useTranslations();
+  const specialtyLabel = t(`specialtyNames.${doctor.specialtySlug}`);
+
   void locale;
 
   return (
-    <article className="flex h-full flex-col rounded-[1.75rem] border border-slate-200/80 bg-white p-5 shadow-[0_14px_45px_rgba(15,23,42,0.06)]">
-      <div className="flex items-start gap-4">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-blue-100 text-lg font-semibold text-primary">
-          {doctor.image}
-        </div>
+    <article className="group flex h-full flex-col overflow-hidden border border-gray-100 bg-white transition-all duration-500 hover:shadow-xl">
+      {/* Photo area */}
+      <div className="relative h-72 overflow-hidden">
+        <img
+          src={doctor.photoUrl}
+          alt={doctor.name}
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
 
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.26em] text-primary">
-            {doctor.specialty}
-          </p>
-          <h3 className="mt-1 text-xl font-semibold text-slate-900">
-            {doctor.name}
-          </h3>
-          <div className="mt-3 flex items-center gap-2 text-sm text-slate-600">
-            <Phone className="h-4 w-4" />
-            <span>{doctor.phone}</span>
+        {/* Hover overlay with profile CTA */}
+        <div className="absolute inset-0 flex items-end bg-navy/0 transition-all duration-500 group-hover:bg-navy/40">
+          <div className="w-full translate-y-3 px-4 pb-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+            <Link
+              href={`/doctor/${doctor.slug}`}
+              className="flex w-full items-center justify-center gap-2 bg-white py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-navy"
+            >
+              {t("profile.viewProfile")} <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
           </div>
         </div>
+
+        {/* Available badge */}
+        <div className="absolute left-4 top-4">
+          <span className="bg-medical-green px-2.5 py-1 font-sans text-[9px] font-bold uppercase tracking-[0.15em] text-white">
+            {t("doctors.available")}
+          </span>
+        </div>
       </div>
 
-      <div className="mt-5 space-y-3 text-sm text-slate-600">
-        <div className="flex items-start gap-2">
-          <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-          <span>
-            {t("doctors.location")}: {doctor.floor}, {doctor.office}
-          </span>
-        </div>
-        <div className="flex items-start gap-2">
-          <Globe className="mt-0.5 h-4 w-4 text-primary" />
-          <span>
-            {t("doctors.languages")}: {doctor.languages.join(" / ")}
-          </span>
-        </div>
-        <p>
-          <span className="font-medium text-slate-800">
-            {t("doctors.schedule")}:
-          </span>{" "}
-          {doctor.hours}
+      {/* Content */}
+      <div className="flex flex-grow flex-col border-t border-gray-100 p-6">
+        <span className="mb-2.5 block font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-gold">
+          {specialtyLabel}
+        </span>
+        <h3 className="mb-3 font-display text-xl font-bold leading-snug text-navy transition-colors group-hover:text-navy-light">
+          {doctor.name}
+        </h3>
+        <p className="mb-6 flex-grow font-sans text-sm font-light leading-relaxed text-on-surface-variant line-clamp-2">
+          {doctor.description}
         </p>
-      </div>
 
-      <WhatsAppButton href={doctor.whatsapp} label={t("doctors.whatsapp")} />
+        <a
+          href={doctor.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex w-full items-center justify-center gap-2 bg-medical-green py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-white transition-all hover:bg-[#0A7569]"
+        >
+          <MessageCircle className="h-4 w-4 fill-white" />
+          {t("doctors.whatsapp")}
+        </a>
+      </div>
     </article>
   );
 }

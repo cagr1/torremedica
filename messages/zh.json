@@ -1,57 +1,176 @@
 {
   "metadata": {
     "title": "拉卡罗莱纳医疗大楼 | 马查拉",
-    "description": "厄瓜多尔马查拉专科医生目录。通过WhatsApp预约。"
+    "description": "厄瓜多尔马查拉医疗专科目录，可通过 WhatsApp 预约。"
   },
   "nav": {
     "brand": "Torre Medica La Carolina",
+    "home": "首页",
     "specialties": "专科",
-    "specialists": "专科医生",
-    "towers": "医疗大楼",
+    "specialists": "专家",
+    "towers": "大楼",
     "doctors": "医生",
-    "language": "语言"
+    "language": "语言",
+    "bookAppointment": "预约",
+    "announcementAddress": "马查拉 Circunvalacion Norte 与 Marcel Laniado",
+    "announcementHours": "综合体 24 小时开放"
   },
   "hero": {
-    "eyebrow": "厄瓜多尔·马查拉",
-    "title": "所有医疗专科，一站式服务",
-    "description": "直接通过WhatsApp预约，无需中间人，无需等待。拉卡罗莱纳医疗大楼汇聚马查拉最优秀的专科医生。",
-    "primaryCta": "查看专科医生",
-    "secondaryCta": "如何预约",
-    "statDoctors": "12 位演示医生",
-    "statSpecialties": "12 个专科",
-    "statLocale": "ES / EN / 中文"
+    "eyebrow": "马查拉 · 厄瓜多尔",
+    "title": "一站式医疗专科服务",
+    "description": "通过 WhatsApp 直接预约，无需中间环节，也无需等待。Torre Medica La Carolina 汇聚了马查拉优秀的医疗专家。",
+    "primaryCta": "查看专家",
+    "secondaryCta": "如何预约"
   },
   "howto": {
     "title": "预约就是这么简单",
-    "step1Title": "选择专科医生",
+    "step1Title": "选择专家",
     "step1Desc": "浏览目录，找到您需要的专业医生。",
-    "step2Title": "通过WhatsApp联系",
+    "step2Title": "通过 WhatsApp 联系",
     "step2Desc": "一键直接联系诊所。",
     "step3Title": "确认预约",
-    "step3Desc": "医生团队将确认您的可用日期和时间。"
+    "step3Desc": "医生团队会确认可用日期与时间。"
+  },
+  "home": {
+    "howtoTag": "您的就诊之路",
+    "howtoSubtitle": "三个简单步骤，帮助您快速联系合适的专家。",
+    "doctorsTag": "我们的专家团队",
+    "viewAllSpecialists": "查看全部专家",
+    "facilitiesTag": "我们的设施",
+    "facilitiesTitle": "为",
+    "facilitiesAccent": "卓越而设计",
+    "facilitiesDescription": "位于马查拉核心区域的两栋现代化医疗大楼，提供完整医疗基础设施。",
+    "feature1Title": "I 号楼：临床中心",
+    "feature1Desc": "多层分布的私人诊室与先进诊断实验室。",
+    "feature2Title": "II 号楼：医疗单元",
+    "feature2Desc": "提供检查、治疗支持与专科护理的一体化空间。",
+    "feature3Title": "延长服务时间",
+    "feature3Desc": "协调就诊、安全保障与全天候进入综合体的体验。",
+    "exploreTowers": "查看大楼",
+    "facilitiesImageAlt": "医疗设施",
+    "ctaEyebrow": "今天开始",
+    "ctaTitle": "准备好找到您的专家了吗？",
+    "ctaDescription": "两栋新一代医疗大楼内汇聚 50 多位合格专家，随时为您服务。",
+    "ctaPrimary": "查看全部专家",
+    "ctaSecondary": "WhatsApp 礼宾服务",
+    "stats": {
+      "specialists": {
+        "label": "专家",
+        "sub": "覆盖多个领域"
+      },
+      "towers": {
+        "label": "医疗大楼",
+        "sub": "现代化基础设施"
+      },
+      "years": {
+        "label": "服务年限",
+        "sub": "服务马查拉"
+      },
+      "security": {
+        "label": "安全保障",
+        "sub": "随时可用"
+      }
+    }
   },
   "specialties": {
     "title": "重点专科",
-    "description": "快速了解医疗大楼内可预约的主要专科。"
+    "description": "快速了解大楼内提供的主要医疗领域。"
+  },
+  "specialtyNames": {
+    "all": "全部",
+    "cardiologia": "心脏科",
+    "pediatria": "儿科",
+    "dermatologia": "皮肤科",
+    "traumatologia": "创伤科",
+    "ginecologia": "妇科",
+    "neurologia": "神经科",
+    "nutricion": "营养科",
+    "oftalmologia": "眼科",
+    "odontologia": "牙科",
+    "psicologia-clinica": "临床心理科",
+    "medicina-interna": "内科",
+    "urologia": "泌尿科"
   },
   "doctors": {
     "title": "医生目录",
-    "description": "每张医生卡片都带有 WhatsApp 按钮，方便预约和初步咨询。",
+    "description": "每张卡片都包含一个 WhatsApp 按钮，方便预约或初步咨询。",
     "languages": "语言",
-    "schedule": "出诊时间",
+    "schedule": "时间",
     "location": "位置",
-    "whatsapp": "通过 WhatsApp 预约"
+    "whatsapp": "通过 WhatsApp 预约",
+    "available": "可预约",
+    "emptyState": "该分类下暂无专家。"
   },
   "specialists": {
-    "title": "我们的专科医生",
-    "subtitle": "完整目录"
+    "title": "我们的专家",
+    "subtitle": "完整目录",
+    "directoryTag": "医疗目录"
   },
   "towers": {
-    "title": "医疗大楼",
-    "subtitle": "马查拉两处地点"
+    "title": "我们的医疗大楼",
+    "subtitle": "同一医疗综合体内的两栋大楼",
+    "cardTag": "医疗基础设施",
+    "viewOnMaps": "在 Google 地图中查看",
+    "mapTitle": "综合体位置",
+    "mapDescription": "Google Maps 将 Torre Medica La Carolina 显示为一个公共地点，访客可由此进入 I 号楼和 II 号楼。",
+    "openMaps": "打开 Google 地图",
+    "reviewsEyebrow": "公开评价",
+    "reviewsTitle": "患者怎么说",
+    "reviewsDescription": "这里展示的是 Torre Medica La Carolina 在 Google Maps 公共页面上的评价摘要。",
+    "viewReviews": "在 Google 查看评价",
+    "reviewQuotes": {
+      "review-1": "专业团队非常出色。",
+      "review-2": "服务非常优秀。",
+      "review-3": "这里可以找到不错的专家。"
+    },
+    "torre-1": {
+      "floors": "1 至 6 层",
+      "schedule": "医疗综合体提供 24 小时通行",
+      "locationNote": "它与 II 号楼一起显示在同一个 Google Maps 公共页面中。"
+    },
+    "torre-2": {
+      "floors": "1 至 5 层",
+      "schedule": "医疗综合体提供 24 小时通行",
+      "locationNote": "它与整个综合体共享同一个 Google Maps 公共页面。"
+    }
   },
   "footer": {
-    "address": "厄瓜多尔马查拉 La Carolina 大道",
-    "phone": "咨询总机：+593 7 555 0101"
+    "description": "位于厄瓜多尔马查拉中心地带的医疗卓越中心。",
+    "contactTitle": "联系方式",
+    "navigationTitle": "导航",
+    "specialtiesTitle": "专科",
+    "hoursLabel": "诊疗时间",
+    "address": "厄瓜多尔马查拉 Circunvalacion Norte 与 Marcel Laniado",
+    "phone": "咨询总机：+593 7 298 1574",
+    "weekHours": "周一至周五：07:00-20:00",
+    "saturdayHours": "周六：08:00-14:00",
+    "whatsapp": "WhatsApp：+593 7 298 1574",
+    "copyright": "© 2026 Torre Medica La Carolina。保留所有权利。",
+    "tagline": "厄瓜多尔医疗卓越中心"
+  },
+  "profile": {
+    "backToSpecialists": "返回专家列表",
+    "certifiedSpecialist": "认证专科医生",
+    "experience": "专业经历",
+    "contact": "快速联系",
+    "contactDesc": "直接与诊室联系预约。",
+    "bookWhatsApp": "通过 WhatsApp 预约",
+    "officeLocation": "诊室位置",
+    "visitingHours": "诊疗时间",
+    "openMaps": "在 Google 地图中打开",
+    "viewProfile": "查看个人资料"
+  },
+  "search": {
+    "nameLabel": "按姓名搜索",
+    "namePlaceholder": "例如：Dr. Romero...",
+    "specialtyLabel": "专科",
+    "allSpecialties": "全部专科",
+    "resetLabel": "重置",
+    "noResultsTitle": "未找到结果",
+    "noResultsDesc": "请尝试调整搜索词或筛选条件。",
+    "notFoundTitle": "没找到您要找的医生？",
+    "notFoundDesc": "我们中心拥有 50 多位专科医生，请联系我们，我们将帮您找到合适的专家。",
+    "callReception": "致电前台",
+    "whatsappCentral": "WhatsApp 总线"
   }
 }

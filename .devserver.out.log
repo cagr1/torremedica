@@ -1,0 +1,16 @@
+
+> torre-medica@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.9s
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 9.3s (713 modules)
+ HEAD /es 200 in 10026ms
+ GET /es 200 in 9025ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 605ms (436 modules)
+ GET /favicon.ico 200 in 698ms

@@ -19,6 +19,9 @@ export interface Doctor {
   floor: string;
   office: string;
   hours: string;
-  image: string;
+  image: string;       // initials fallback
+  photoUrl: string;    // real photo URL
+  description: string; // short bio for card
+  experience: string;  // long bio for profile page
   languages: string[];
 }
