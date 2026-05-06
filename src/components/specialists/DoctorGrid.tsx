@@ -8,6 +8,7 @@ import { specialties } from "@/data/specialties";
 import type { Doctor } from "@/types";
 
 import { DoctorCard } from "./DoctorCard";
+import { Reveal } from "@/components/ui/Reveal";
 
 type DoctorGridProps = {
   doctors: Doctor[];
@@ -39,7 +40,7 @@ export function DoctorGrid({ doctors, specialties, locale }: DoctorGridProps) {
   return (
     <div className="space-y-10">
       {/* Filter bar */}
-      <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm md:p-8">
+      <Reveal className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm md:p-8">
         <div className="grid grid-cols-1 items-end gap-6 md:grid-cols-12">
           {/* Search by name */}
           <div className="md:col-span-5">
@@ -91,17 +92,17 @@ export function DoctorGrid({ doctors, specialties, locale }: DoctorGridProps) {
             </button>
           </div>
         </div>
-      </div>
+      </Reveal>
 
       {/* Grid */}
       {filteredDoctors.length > 0 ? (
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {filteredDoctors.map((doctor) => (
             <DoctorCard key={doctor.id} doctor={doctor} locale={locale} />
           ))}
         </div>
       ) : (
-        <div className="rounded-2xl border border-gray-100 py-20 text-center">
+        <Reveal className="rounded-2xl border border-gray-100 py-20 text-center">
           <div className="mb-4 flex justify-center text-gray-200">
             <Search className="h-16 w-16" />
           </div>
@@ -109,11 +110,14 @@ export function DoctorGrid({ doctors, specialties, locale }: DoctorGridProps) {
             {t("search.noResultsTitle")}
           </h3>
           <p className="font-sans text-gray-500">{t("search.noResultsDesc")}</p>
-        </div>
+        </Reveal>
       )}
 
       {/* Not finding what you need CTA */}
-      <section className="relative overflow-hidden rounded-[2rem] bg-navy px-10 py-16 text-center text-white md:px-16">
+      <Reveal
+        as="section"
+        className="relative overflow-hidden rounded-[2rem] bg-navy px-10 py-16 text-center text-white md:px-16"
+      >
         <div className="pointer-events-none absolute -left-24 -top-24 h-96 w-96 rounded-full bg-white/5" />
         <div className="pointer-events-none absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-white/5" />
         <div className="relative z-10">
@@ -142,7 +146,7 @@ export function DoctorGrid({ doctors, specialties, locale }: DoctorGridProps) {
             </a>
           </div>
         </div>
-      </section>
+      </Reveal>
     </div>
   );
 }

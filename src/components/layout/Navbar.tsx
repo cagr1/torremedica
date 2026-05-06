@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, MessageSquare, X } from "lucide-react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
@@ -20,6 +21,7 @@ const navItems = [
   { href: "/", key: "home" },
   { href: "/especialistas", key: "specialists" },
   { href: "/torres", key: "towers" },
+  { href: "/#contacto", key: "contact" },
 ] as const;
 
 export function Navbar({ locale }: NavbarProps) {
@@ -52,16 +54,23 @@ export function Navbar({ locale }: NavbarProps) {
           scrolled ? "shadow-md" : "border-b border-gray-100"
         }`}
       >
-        <div className="container-custom flex items-center justify-between py-5">
-          <Link href="/" className="flex shrink-0 items-center gap-3">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-navy">
-              <span className="font-display text-base font-bold leading-none text-gold">T</span>
+        <div className="container-custom flex items-center justify-between py-4 sm:py-5">
+          <Link href="/" className="flex shrink-0 items-center gap-3 sm:gap-4">
+            <div className="relative h-[58px] w-[88px] sm:h-[66px] sm:w-[100px] lg:h-[72px] lg:w-[108px]">
+              <Image
+                src="/LogoTorreNavbar.png"
+                alt="Logo Torre Medica La Carolina"
+                fill
+                sizes="(max-width: 640px) 88px, (max-width: 1024px) 100px, 108px"
+                className="object-contain"
+                priority
+              />
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="hidden font-display text-base font-bold tracking-tight text-navy sm:block">
+              <span className="hidden font-display text-lg font-bold tracking-tight text-navy sm:block lg:text-xl">
                 Torre Medica
               </span>
-              <span className="hidden font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-gold sm:block">
+              <span className="hidden font-sans text-[11px] font-semibold uppercase tracking-[0.18em] text-gold sm:block">
                 La Carolina
               </span>
             </div>

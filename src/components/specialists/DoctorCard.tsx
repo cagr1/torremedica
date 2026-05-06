@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
 import type { Doctor } from "@/types";
+import { Reveal } from "@/components/ui/Reveal";
 
 type DoctorCardProps = {
   doctor: Doctor;
@@ -16,7 +17,10 @@ export function DoctorCard({ doctor, locale }: DoctorCardProps) {
   void locale;
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden border border-gray-100 bg-white transition-all duration-500 hover:shadow-xl">
+    <Reveal
+      as="article"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white transition-all duration-500 hover:shadow-xl"
+    >
       {/* Photo area */}
       <div className="relative h-72 overflow-hidden">
         <img
@@ -30,7 +34,7 @@ export function DoctorCard({ doctor, locale }: DoctorCardProps) {
           <div className="w-full translate-y-3 px-4 pb-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
             <Link
               href={`/doctor/${doctor.slug}`}
-              className="flex w-full items-center justify-center gap-2 bg-white py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-navy"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-white py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-navy"
             >
               {t("profile.viewProfile")} <ArrowRight className="h-3.5 w-3.5" />
             </Link>
@@ -61,12 +65,12 @@ export function DoctorCard({ doctor, locale }: DoctorCardProps) {
           href={doctor.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex w-full items-center justify-center gap-2 bg-medical-green py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-white transition-all hover:bg-[#0A7569]"
+          className="flex w-full items-center justify-center gap-2 rounded-xl bg-medical-green py-2.5 font-sans text-xs font-semibold uppercase tracking-wide text-white transition-all hover:bg-[#0A7569]"
         >
           <MessageCircle className="h-4 w-4 fill-white" />
           {t("doctors.whatsapp")}
         </a>
       </div>
-    </article>
+    </Reveal>
   );
 }

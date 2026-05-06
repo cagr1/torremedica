@@ -11,6 +11,7 @@ import { getTranslations } from "next-intl/server";
 
 import { SectionHeader } from "@/components/layout/SectionHeader";
 import { DoctorGrid } from "@/components/specialists/DoctorGrid";
+import { Reveal } from "@/components/ui/Reveal";
 import { doctors } from "@/data/doctors";
 import { specialties } from "@/data/specialties";
 import { Link } from "@/i18n/navigation";
@@ -66,39 +67,47 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
           <div className="container-custom w-full py-20">
             <div className="max-w-3xl">
               {/* Eyebrow */}
-              <div className="mb-8 flex items-center gap-3">
+              <Reveal className="mb-8 flex items-center gap-3">
                 <div className="h-px w-10 bg-gold" />
                 <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.25em] text-gold">
                   {t("hero.eyebrow")}
                 </span>
-              </div>
+              </Reveal>
 
               {/* Headline */}
-              <h1 className="mb-8 font-display text-6xl font-bold leading-[1.0] tracking-tight text-white md:text-7xl lg:text-[5.5rem]">
+              <Reveal
+                as="h1"
+                delay="1"
+                className="mb-8 font-display text-6xl font-bold leading-[1.0] tracking-tight text-white md:text-7xl lg:text-[5.5rem]"
+              >
                 Torre Médica
                 <br />
                 <em className="text-gold-light">La Carolina</em>
-              </h1>
+              </Reveal>
 
-              <p className="mb-12 max-w-xl font-sans text-xl font-light leading-relaxed text-white/55">
+              <Reveal
+                as="p"
+                delay="2"
+                className="mb-12 max-w-xl font-sans text-xl font-light leading-relaxed text-white/90"
+              >
                 {t("hero.description")}
-              </p>
+              </Reveal>
 
-              <div className="flex flex-col gap-4 sm:flex-row">
+              <Reveal delay="2" className="flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="/especialistas"
-                  className="bg-white px-10 py-4 text-center font-sans text-sm font-semibold uppercase tracking-[0.1em] text-navy transition-all duration-200 hover:bg-gold hover:text-white"
+                  className="rounded-xl bg-white px-10 py-4 text-center font-sans text-sm font-semibold uppercase tracking-[0.1em] text-navy transition-all duration-200 hover:bg-gold hover:text-white"
                 >
                   {t("hero.primaryCta")}
                 </Link>
                 <a
                   href="https://wa.me/59372981574"
-                  className="flex items-center justify-center gap-3 border border-white/30 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-200 hover:bg-white/10"
+                  className="flex items-center justify-center gap-3 rounded-xl border border-white/30 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white"
                 >
                   <MessageCircle className="h-4 w-4 fill-white" />
                   {t("hero.secondaryCta")}
                 </a>
-              </div>
+              </Reveal>
             </div>
           </div>
         </div>
@@ -143,31 +152,30 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
                 icon: <Search className="h-7 w-7" />,
                 title: t("howto.step1Title"),
                 desc: t("howto.step1Desc"),
-                color: "from-navy to-navy-light",
               },
               {
                 step: "02",
                 icon: <MessageCircle className="h-7 w-7" />,
                 title: t("howto.step2Title"),
                 desc: t("howto.step2Desc"),
-                color: "from-gold to-[#92400e]",
               },
               {
                 step: "03",
                 icon: <CalendarCheck className="h-7 w-7" />,
                 title: t("howto.step3Title"),
                 desc: t("howto.step3Desc"),
-                color: "from-medical-green to-[#134e4a]",
               },
             ].map((item) => (
-              <div key={item.step} className="relative z-10 flex flex-col items-center px-8 text-center md:items-center">
+              <Reveal
+                key={item.step}
+                className="group relative z-10 flex flex-col items-center px-8 text-center md:items-center"
+              >
                 <div className="relative mb-10">
-                  {/* Gradient icon circle */}
-                  <div className={`flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br ${item.color} text-white shadow-lg`}>
+                  <div className="relative z-10 flex h-20 w-20 items-center justify-center rounded-2xl border-2 border-navy bg-white text-navy shadow-sm transition-all duration-300 group-hover:bg-navy group-hover:text-white group-hover:shadow-lg">
                     {item.icon}
                   </div>
                   {/* Step badge */}
-                  <span className="absolute -right-3 -top-3 flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-gold font-sans text-[11px] font-bold text-white shadow-md">
+                  <span className="absolute -right-3 -top-3 z-20 flex h-7 w-7 items-center justify-center rounded-full border-2 border-white bg-gold font-sans text-[11px] font-bold text-white shadow-md">
                     {item.step}
                   </span>
                 </div>
@@ -175,13 +183,13 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
                 <p className="font-sans text-sm font-light leading-relaxed text-on-surface-variant">
                   {item.desc}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-cream py-32">
+      <section className="bg-white py-32">
         <div className="container-custom">
           <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <SectionHeader
@@ -199,14 +207,14 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
 
           <DoctorGrid doctors={doctors.slice(0, 3)} specialties={specialties} locale={locale} />
 
-          <div className="mt-12 text-center md:hidden">
+          <Reveal className="mt-12 text-center md:hidden">
             <Link
               href="/especialistas"
-              className="inline-flex items-center gap-2 rounded-xl border border-navy px-5 py-3 font-sans text-sm font-semibold text-navy"
+              className="inline-flex items-center gap-2 rounded-xl border border-navy px-5 py-3 font-sans text-sm font-semibold text-navy transition-all hover:border-gold hover:text-gold"
             >
               {t("home.viewAllSpecialists")} <ArrowRight className="h-4 w-4" />
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -221,39 +229,54 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
         <div className="container-custom relative z-10">
           <div className="grid grid-cols-1 items-center gap-20 lg:grid-cols-2">
             <div>
-              <span className="mb-6 block font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">
+              <Reveal
+                as="span"
+                className="mb-6 block font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-gold"
+              >
                 {t("home.facilitiesTag")}
-              </span>
-              <h2 className="mb-8 font-display text-4xl font-bold leading-tight text-white md:text-5xl">
+              </Reveal>
+              <Reveal
+                as="h2"
+                delay="1"
+                className="mb-8 font-display text-4xl font-bold leading-tight text-white md:text-5xl"
+              >
                 {t("home.facilitiesTitle")} <em className="text-gold-light">{t("home.facilitiesAccent")}</em>
-              </h2>
-              <p className="mb-12 font-sans text-lg font-light leading-relaxed text-white">
+              </Reveal>
+              <Reveal
+                as="p"
+                delay="2"
+                className="mb-12 font-sans text-lg font-light leading-relaxed text-white"
+              >
                 {t("home.facilitiesDescription")}
-              </p>
+              </Reveal>
               <div className="mb-12 space-y-8">
-                {facilityFeatures.map((feature) => (
-                  <div key={feature.title} className="group flex gap-5">
-                    <div className="w-px shrink-0 bg-gold/30 transition-colors duration-300 group-hover:bg-gold" />
-                    <div>
-                      <div className="mb-1.5 text-gold">{feature.icon}</div>
-                      <h4 className="mb-1.5 font-display text-lg font-bold text-white">{feature.title}</h4>
-                      <p className="font-sans text-sm font-light leading-relaxed text-white">
-                        {feature.desc}
-                      </p>
+                {facilityFeatures.map((feature, index) => (
+                  <Reveal key={feature.title} delay={index === 0 ? "none" : index === 1 ? "1" : "2"}>
+                    <div className="group flex gap-5">
+                      <div className="w-px shrink-0 bg-gold/30 transition-colors duration-300 group-hover:bg-gold" />
+                      <div>
+                        <div className="mb-1.5 text-gold">{feature.icon}</div>
+                        <h4 className="mb-1.5 font-display text-lg font-bold text-white">{feature.title}</h4>
+                        <p className="font-sans text-sm font-light leading-relaxed text-white">
+                          {feature.desc}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </Reveal>
                 ))}
               </div>
-              <Link
-                href="/torres"
-                className="inline-flex items-center gap-3 rounded-xl border border-white/30 px-8 py-4 font-sans text-sm font-semibold uppercase tracking-wide text-white transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white"
-              >
-                {t("home.exploreTowers")} <ArrowRight className="h-4 w-4" />
-              </Link>
+              <Reveal>
+                <Link
+                  href="/torres"
+                  className="inline-flex items-center gap-3 rounded-xl border border-white/30 px-8 py-4 font-sans text-sm font-semibold uppercase tracking-wide text-white transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white"
+                >
+                  {t("home.exploreTowers")} <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Reveal>
             </div>
 
-            <div className="relative">
-              <div className="relative overflow-hidden rounded-[28px]">
+            <Reveal className="relative">
+              <div className="hover-image-zoom relative rounded-[28px]">
                 <img
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFaLHS7tcsstFlmTAfV4wB_YRpkXoJP5h0viowbBYsoFSIMvaZxv83p2CgdOpvxmIJ6m6aYg9_K3etUEH_3Ya4xcXj_yZ8BKBvgIUm2WGCJgxtLeK8CojV84HjARsE-S3jrud5gL64SR-wUznydU1laUIY2JNhJ5Ue8L-_KLCJfyPAAk3i_AHFVVklZtP6nkIfA1LYyt2Q-OLWUFXi0kQ2FKDR6WTbXNa30XO98jgKhrA6DukjHIyOa7QVG5HJArU7ONmtGONBKV24"
                   alt={t("home.facilitiesImageAlt")}
@@ -261,13 +284,7 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
                 />
                 <div className="pointer-events-none absolute inset-5 rounded-[22px] border border-gold/25" />
               </div>
-              <div className="absolute -bottom-5 -left-5 z-20 rounded-[20px] bg-gold p-6 shadow-2xl">
-                <div className="font-display text-4xl font-bold leading-none text-white">50+</div>
-                <div className="mt-1.5 font-sans text-[11px] uppercase tracking-widest text-white/90">
-                  {t("home.stats.specialists.label")}
-                </div>
-              </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -278,16 +295,27 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
             <div className="pointer-events-none absolute right-0 top-0 h-80 w-80 translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/5" />
             <div className="pointer-events-none absolute bottom-0 left-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-gold/5" />
             <div className="relative z-10">
-              <span className="mb-6 block font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">
+              <Reveal
+                as="span"
+                className="mb-6 block font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-gold"
+              >
                 {t("home.ctaEyebrow")}
-              </span>
-              <h2 className="mx-auto mb-8 max-w-3xl font-display text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+              </Reveal>
+              <Reveal
+                as="h2"
+                delay="1"
+                className="mx-auto mb-8 max-w-3xl font-display text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl"
+              >
                 {t("home.ctaTitle")}
-              </h2>
-              <p className="mx-auto mb-12 max-w-2xl font-sans text-lg font-light leading-relaxed text-white">
+              </Reveal>
+              <Reveal
+                as="p"
+                delay="2"
+                className="mx-auto mb-12 max-w-2xl font-sans text-lg font-light leading-relaxed text-white"
+              >
                 {t("home.ctaDescription")}
-              </p>
-              <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              </Reveal>
+              <Reveal className="flex flex-col justify-center gap-4 sm:flex-row">
                 <Link
                   href="/especialistas"
                   className="rounded-xl bg-gold px-12 py-5 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white shadow-lg transition-all duration-200 hover:bg-gold-light"
@@ -296,12 +324,12 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
                 </Link>
                 <a
                   href="https://wa.me/59372981574"
-                  className="flex items-center justify-center gap-3 rounded-xl border border-white/25 px-12 py-5 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white transition-all duration-200 hover:bg-white/8"
+                  className="flex items-center justify-center gap-3 rounded-xl border border-white/25 px-12 py-5 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white"
                 >
                   <MessageCircle className="h-5 w-5 fill-white" />
                   {t("home.ctaSecondary")}
                 </a>
-              </div>
+              </Reveal>
             </div>
           </div>
         </div>
