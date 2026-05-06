@@ -18,9 +18,9 @@ type TowersPageProps = {
 };
 
 const towerImages = {
-  hero: "https://lh3.googleusercontent.com/aida-public/AB6AXuAQzeFaW_FvOFcGvq9g-QBpQyy7hIhbiWe43tDYKsP-9QZdKDcR-1AF9tbWBCbSHObV16ani4exGrlsOg2T2np-D17Z6DXPCGtIPhwi69s04KYrYnV3k5fYnFx7-4rsj__07OTGEntHJ6Z9UBe9K4KgGQWeggoqgqAc4eAxvl4-uM6BQ3Fi1WVxOhgFWWzT6sF3tWn-KIW8bCuerM-AKqlWggB_GNpKHFDVbXVoLIjqQEt9oWAZUdFR9kRskF8orewnoATxIw4rP8OB",
-  tower1: "https://lh3.googleusercontent.com/aida-public/AB6AXuBXlLY_EbRebCZCLbqkbpUJx2vIIpa9WHWSHU_L3tvC9hqloMu_p0drhVu4YoHSEvHsUf6mNxCx_UF83ENqWsZdUqHEMsVkhw8zdEkgi4DaJDHNUrSBAXME3MzSgZbdACLEqMSOLSqpucqakR8lUZn1BJVD0O-I5mUOv_RfyRIXefZUsm3AEDUZhg29THCGA8MqwqF6WHUw2SD-TbK9Fv8PXx2dbi_3ytrNlScb5OQQsY3ODFw2KB1as2gixalqWyiegc4bGsoGvd-S",
-  tower2: "https://lh3.googleusercontent.com/aida-public/AB6AXuCvdz3gpDXs7DPz52WP0VtsKKIfXfs3VQ4AQiQJDKZCSvGbM_tiG3B0Y1ENKasmczaDEnrjEiCjsa2m5twq95ygITb3FN7sg6SHh9hjJ4r1QqQg6oKIET51Bhf_DPZ9Mp1lbWD1pJk8pcG3DIacZZPVvKAqtYmAVaRTf5X1DGiZbVwyQJQl4gcJB21-C5Dl2_TMllhFdoG774xcfExs_9nzGlYmxj5tWDHS1QuO9drkUdzM4iA9JkRdG26DQ478owF0jzCXh6Iaqrbz",
+  hero: "/torres/TorreMedica1.png",
+  tower1: "/torres/TorreMedica2.png",
+  tower2: "/torres/TorreMedica3.png",
 } as const;
 
 export default async function TowersPage({ params: { locale } }: TowersPageProps) {

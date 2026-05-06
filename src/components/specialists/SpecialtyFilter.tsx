@@ -10,6 +10,7 @@ const SPECIALTY_DOT_COLORS: Record<string, string> = {
   dermatologia:           "#d97706",
   traumatologia:          "#4f46e5",
   ginecologia:            "#db2777",
+  neumologia:             "#2563eb",
   neurologia:             "#7c3aed",
   nutricion:              "#16a34a",
   oftalmologia:           "#0284c7",

@@ -22,6 +22,11 @@ type HomePageProps = {
 
 export default async function HomePage({ params: { locale } }: HomePageProps) {
   const t = await getTranslations({ locale });
+  const heroImages = [
+    "/torres/TorreMedica1.png",
+    "/torres/TorreMedica2.png",
+    "/torres/TorreMedica3.png",
+  ];
 
   const heroStats = [
     { num: "50+", label: t("home.stats.specialists.label"), sub: t("home.stats.specialists.sub") },
@@ -53,12 +58,18 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
       <section className="relative flex min-h-screen flex-col overflow-hidden">
         {/* Background image + dark navy overlay */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvdz3gpDXs7DPz52WP0VtsKKIfXfs3VQ4AQiQJDKZCSvGbM_tiG3B0Y1ENKasmczaDEnrjEiCjsa2m5twq95ygITb3FN7sg6SHh9hjJ4r1QqQg6oKIET51Bhf_DPZ9Mp1lbWD1pJk8pcG3DIacZZPVvKAqtYmAVaRTf5X1DGiZbVwyQJQl4gcJB21-C5Dl2_TMllhFdoG774xcfExs_9nzGlYmxj5tWDHS1QuO9drkUdzM4iA9JkRdG26DQ478owF0jzCXh6Iaqrbz"
-            alt="Torre Medica La Carolina"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/72 to-navy/40" />
+          {heroImages.map((image, index) => (
+            <img
+              key={image}
+              src={image}
+              alt="Torre Medica La Carolina"
+              className="hero-rotating-image absolute inset-0 h-full w-full object-cover"
+              style={{ animationDelay: `${index * 8}s` }}
+            />
+          ))}
+          <div className="absolute inset-0 bg-navy/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/96 via-navy/82 to-navy/55" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.08),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(11,29,58,0.22),transparent_34%)]" />
           <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-navy to-transparent" />
         </div>
 
@@ -102,7 +113,7 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
                 </Link>
                 <a
                   href="https://wa.me/59372981574"
-                  className="flex items-center justify-center gap-3 rounded-xl border border-white/30 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white"
+                  className="flex items-center justify-center gap-3 rounded-xl border border-white/55 bg-white/10 px-10 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-white shadow-[0_10px_30px_rgba(0,0,0,0.18)] backdrop-blur-sm transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white"
                 >
                   <MessageCircle className="h-4 w-4 fill-white" />
                   {t("hero.secondaryCta")}
@@ -205,7 +216,7 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
             </Link>
           </div>
 
-          <DoctorGrid doctors={doctors.slice(0, 3)} specialties={specialties} locale={locale} />
+          <DoctorGrid doctors={doctors.slice(0, 4)} specialties={specialties} locale={locale} />
 
           <Reveal className="mt-12 text-center md:hidden">
             <Link

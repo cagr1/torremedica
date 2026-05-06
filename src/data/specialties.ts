@@ -4,6 +4,7 @@ export const specialties = [
   { slug: "dermatologia", name: "Dermatologia" },
   { slug: "traumatologia", name: "Traumatologia" },
   { slug: "ginecologia", name: "Ginecologia" },
+  { slug: "neumologia", name: "Neumologia" },
   { slug: "neurologia", name: "Neurologia" },
   { slug: "nutricion", name: "Nutricion" },
   { slug: "oftalmologia", name: "Oftalmologia" },
