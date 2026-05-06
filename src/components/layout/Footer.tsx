@@ -27,13 +27,13 @@ export function Footer() {
       <div className="container-custom grid grid-cols-1 gap-12 pb-12 pt-16 md:grid-cols-12">
         <div className="space-y-6 md:col-span-4">
           <div>
-            <div className="mb-5 flex items-center gap-4">
-              <div className="relative h-[76px] w-[116px] shrink-0 sm:h-[84px] sm:w-[128px]">
+            <div className="mb-5 flex items-center gap-3 sm:gap-4">
+              <div className="relative h-[68px] w-[104px] shrink-0 sm:h-[84px] sm:w-[128px]">
                 <Image
                   src="/LogoTorreFooter.png"
                   alt="Logo Torre Medica La Carolina"
                   fill
-                  sizes="(max-width: 640px) 116px, 128px"
+                  sizes="(max-width: 640px) 104px, 128px"
                   className="object-contain"
                 />
               </div>

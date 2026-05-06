@@ -43,7 +43,7 @@ export default async function TowersPage({ params: { locale } }: TowersPageProps
 
   return (
     <main>
-      <section className="relative flex h-[420px] items-center overflow-hidden">
+      <section className="relative flex min-h-[340px] items-center overflow-hidden sm:min-h-[380px] md:h-[420px]">
         <div className="absolute inset-0">
           <img
             src={towerImages.hero}
@@ -184,7 +184,7 @@ export default async function TowersPage({ params: { locale } }: TowersPageProps
             <div className="relative">
               <iframe
                 src={towers[0].mapUrl}
-                className="h-[460px] w-full"
+                className="h-[320px] w-full sm:h-[380px] md:h-[460px]"
                 loading="lazy"
                 title={towers[0].name}
               />
@@ -193,7 +193,7 @@ export default async function TowersPage({ params: { locale } }: TowersPageProps
                   href={mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-xl bg-navy px-5 py-3 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-white shadow-lg transition-all hover:bg-navy-light"
+                  className="inline-flex items-center gap-2 rounded-xl bg-navy px-4 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.1em] text-white shadow-lg transition-all hover:bg-navy-light sm:px-5 sm:text-xs sm:tracking-[0.12em]"
                 >
                   {t("towers.directions")}
                   <ExternalLink className="h-4 w-4" />

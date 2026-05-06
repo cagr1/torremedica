@@ -289,9 +289,9 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
         </div>
       </section>
 
-      <section className="bg-cream py-32">
+      <section className="bg-cream py-24 md:py-32">
         <div className="container-custom">
-          <div className="relative overflow-hidden rounded-[28px] bg-navy px-12 py-20 text-center text-white md:px-24">
+          <div className="relative overflow-hidden rounded-[28px] bg-navy px-6 py-16 text-center text-white sm:px-10 md:px-24 md:py-20">
             <div className="pointer-events-none absolute right-0 top-0 h-80 w-80 translate-x-1/2 -translate-y-1/2 rounded-full bg-gold/5" />
             <div className="pointer-events-none absolute bottom-0 left-0 h-64 w-64 -translate-x-1/2 translate-y-1/2 rounded-full bg-gold/5" />
             <div className="relative z-10">
@@ -318,13 +318,13 @@ export default async function HomePage({ params: { locale } }: HomePageProps) {
               <Reveal className="flex flex-col justify-center gap-4 sm:flex-row">
                 <Link
                   href="/especialistas"
-                  className="rounded-xl bg-gold px-12 py-5 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white shadow-lg transition-all duration-200 hover:bg-gold-light"
+                  className="rounded-xl bg-gold px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white shadow-lg transition-all duration-200 hover:bg-gold-light sm:px-12 sm:py-5"
                 >
                   {t("home.ctaPrimary")}
                 </Link>
                 <a
                   href="https://wa.me/59372981574"
-                  className="flex items-center justify-center gap-3 rounded-xl border border-white/25 px-12 py-5 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white"
+                  className="flex items-center justify-center gap-3 rounded-xl border border-white/25 px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-white transition-all duration-200 hover:border-gold hover:bg-gold hover:text-white sm:px-12 sm:py-5"
                 >
                   <MessageCircle className="h-5 w-5 fill-white" />
                   {t("home.ctaSecondary")}
